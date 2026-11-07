@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="FOODIE — unforgettable food, warm hospitality, and effortless table reservations.">
+  <meta name="theme-color" content="#171513">
+  <title>FOODIE | A Taste Worth Remembering</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="announcement">A GOOD TABLE. GREAT FOOD. EVEN BETTER MEMORIES.</div>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="FOODIE home"><span class="brand-mark">F</span><span>FOODIE<span class="brand-dot">.</span></span></a>
+    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false"><span></span><span></span></button>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="#home">Home</a><a href="#story">Our Story</a><a href="#menu">Menu</a><a href="#reservation">Reservations</a>
+    </nav>
+    <a class="header-cta" href="#reservation">Book a table <span>↗</span></a>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-shade"></div>
+      <div class="hero-content">
+        <p class="eyebrow light-eyebrow"><span></span> WELCOME TO FOODIE</p>
+        <h1>Good food.<br><em>Beautiful moments.</em></h1>
+        <p class="hero-copy">Thoughtfully prepared dishes, warm hospitality, and a place to make every gathering special.</p>
+        <div class="hero-actions"><a class="button button-orange" href="#reservation">Reserve your table <span>↗</span></a><a class="text-link light-link" href="#menu">Explore our menu <span>↓</span></a></div>
+      </div>
+      <div class="hero-note"><span class="note-line"></span><span>MADE TO BE SHARED</span></div>
+      <div class="hero-index">01 <span>/</span> 03</div>
+    </section>
+
+    <section class="intro section-wrap" id="story">
+      <div class="intro-image">
+        <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1100&q=85" alt="Beautifully presented restaurant dining table" loading="lazy">
+        <div class="image-stamp"><span>F</span><small>FOOD<br>WITH HEART</small></div>
+      </div>
+      <div class="intro-copy">
+        <p class="eyebrow"><span></span> THE FOODIE EXPERIENCE</p>
+        <h2>More than a meal.<br><em>A moment to savour.</em></h2>
+        <p>At FOODIE, we believe the best memories are made around the table. We bring together fresh ingredients, inspired cooking, and thoughtful service to make every visit feel special.</p>
+        <p>Come as you are. Stay for one more bite.</p>
+        <a class="text-link dark-link" href="#reservation">Come dine with us <span>↗</span></a>
+      </div>
+    </section>
+
+    <section class="menu-section" id="menu">
+      <div class="section-wrap">
+        <div class="section-heading">
+          <div><p class="eyebrow"><span></span> A LITTLE TASTE OF FOODIE</p><h2>Made with care.<br><em>Served with joy.</em></h2></div>
+          <p>Discover a few guest favourites from our kitchen. Our team will be happy to help with today's selection when you visit.</p>
+        </div>
+        <div class="menu-grid">
+          <article class="menu-card"><img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=900&q=85" alt="Fresh colourful salad" loading="lazy"><div class="menu-card-body"><span class="menu-category">FRESH & BRIGHT</span><h3>Garden Table</h3><p>Seasonal greens, vibrant flavours, and a fresh finish.</p></div></article>
+          <article class="menu-card"><img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=900&q=85" alt="Grilled chef special" loading="lazy"><div class="menu-card-body"><span class="menu-category">FROM THE KITCHEN</span><h3>Chef's Signature</h3><p>A satisfying plate, prepared with a little extra love.</p></div></article>
+          <article class="menu-card"><img src="https://images.unsplash.com/photo-1551024506-0bc0b0c0ba8d?auto=format&fit=crop&w=900&q=85" alt="Sweet dessert served on a plate" loading="lazy"><div class="menu-card-body"><span class="menu-category">A SWEET FINISH</span><h3>Something Sweet</h3><p>Make room for a lovely treat to end your meal.</p></div></article>
+        </div>
+        <p class="menu-disclaimer">Menu photography is illustrative. Ask our team for the current menu and availability.</p>
+      </div>
+    </section>
+
+    <section class="reservation-section" id="reservation">
+      <div class="reservation-photo"><img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=85" alt="Warm, elegant restaurant interior" loading="lazy"><div class="photo-caption">YOUR TABLE IS WAITING</div></div>
+      <div class="reservation-panel">
+        <p class="eyebrow"><span></span> MAKE IT A FOODIE MOMENT</p>
+        <h2>Let's save you<br><em>a seat.</em></h2>
+        <p class="form-intro">Fill in your details and send us your reservation request. Our team will follow up to confirm your table.</p>
+        <form id="reservationForm">
+          <div class="form-grid">
+            <label>Full name<input type="text" name="name" placeholder="Your name" autocomplete="name" required></label>
+            <label>Email address<input type="email" name="email" placeholder="you@example.com" autocomplete="email" required></label>
+            <label>Phone number<input type="tel" name="phone" placeholder="Your phone number" autocomplete="tel" required></label>
+            <label>Number of guests<select name="guests" required><option value="">Select guests</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>More than 8</option></select></label>
+            <label>Reservation date<input type="date" name="date" required></label>
+            <label>Preferred time<input type="time" name="time" required></label>
+            <label class="full-field">Food preferences<input type="text" name="preferences" placeholder="e.g. Vegetarian, no seafood (optional)"></label>
+            <label class="full-field">Special requests<textarea name="requests" rows="3" placeholder="Tell us how we can make your visit special (optional)"></textarea></label>
+          </div>
+          <button class="button button-orange submit-button" type="submit">Send reservation request <span>↗</span></button>
+          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+          <p class="privacy-note">Your details are used to manage your reservation request.</p>
+        </form>
+      </div>
+    </section>
+
+    <section class="closing-cta">
+      <p class="eyebrow light-eyebrow"><span></span> GOOD TIMES START HERE</p>
+      <h2>Bring your appetite.<br><em>We'll take care of the rest.</em></h2>
+      <a class="button button-light" href="#reservation">Book your table <span>↗</span></a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand footer-brand" href="#home"><span class="brand-mark">F</span><span>FOODIE<span class="brand-dot">.</span></span></a>
+    <p>Good food. Beautiful moments.</p>
+    <div class="footer-bottom"><span>© <span id="year"></span> FOODIE. All rights reserved.</span><span>Website crafted by <strong>ESSAM TECHNOLOGY</strong></span><a href="#home">Back to top ↑</a></div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
